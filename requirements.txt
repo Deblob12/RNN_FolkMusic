@@ -1,0 +1,6 @@
+tensorflow==1.14.0
+numpy==1.16.4
+functools==3.2.1
+regex==2019.6.8
+subprocess32-ext==3.2.8.2
+music21==5.7.0

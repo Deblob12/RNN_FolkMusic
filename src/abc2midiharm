@@ -1,0 +1,6 @@
+abcfile=$1
+suffix=${abcfile%.abc}
+abc2midi $abcfile -o "$suffix.mid"
+python harmonize.py "$suffix.mid" 3 
+timidity "$suffix.mid" -Ow "$suffix.wav"
+rm "$suffix.abc"
